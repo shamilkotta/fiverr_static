@@ -57,3 +57,16 @@ document.addEventListener("scroll", () => {
     logoBlack.classList.remove("d-block")
   }
 })
+
+// Our cients 
+const parent = document.getElementById("clients-container");
+const divNode = document.createElement("div");
+divNode.className = "clients-container d-flex justify-content-center align-center flex-wrap bg-secondary bg-opacity-10";
+clients.map((ele) => {
+  const childNode = document.createElement("img");
+  childNode.src = ele.url;
+  childNode.alt = ele.alt;
+  childNode.className = "mx-2";
+  divNode.appendChild(childNode);
+})
+parent.appendChild(divNode);
