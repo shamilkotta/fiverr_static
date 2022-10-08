@@ -4,8 +4,51 @@
 }
 
 body {
+  --primary--color: #19a463;
+  --primary--color-p: rgb(13, 189, 107);
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+#top-nav {
+  z-index: 0;
+}
+
+nav ul > li {
+  cursor: pointer;
+}
+
+#mobile-nav > #sidebar {
+  width: 250px;
+  overflow-x: hidden;
+  margin-left: -250px;
+  transition: margin 0.05s linear;
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.466);
+  backdrop-filter: blur(1px);
+}
+
+.join-btn:hover {
+  border-color: var(--primary--color) !important;
+  background-color: var(--primary--color) !important;
 }
