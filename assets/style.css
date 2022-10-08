@@ -62,3 +62,64 @@ nav ul > li {
   color: white;
   background-color: var(--primary--color) !important;
 }
+
+ /* Hero section */
+
+.hero {
+  background-color: #023a15;
+  width: 100%;
+  height: 680px;
+  background-position: 70% 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: url('https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049970/bg-hero-5-1792-x1.png');
+}
+
+.hero > div {
+ width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .hero > div {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 530px;
+    background-image: none;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+}
+
+.hero input {
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.hero input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: gray;
+  opacity: 1; /* Firefox */
+}
+
+.hero input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+.hero input::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
+.hero input[type=button]:hover {
+  background-color: var(--primary--color) !important;
+}
+
+.hero > div >  div > div > span {
+  font-size: .8rem;
+}
