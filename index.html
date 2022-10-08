@@ -21,16 +21,18 @@
 
 <body>
   <header>
-    <nav class="p-0 fixed-top" id="top-nav">
-      <div class="top-nav row mx-auto my-auto pt-3 w-100 container-fluid text-white">
-        <div class="toggle-btn col-auto text-start p-0 d-md-none" style="cursor: pointer;" id="nav-toggler">
+    <nav class="p-0 fixed-top text-white" id="top-nav">
+      <div class="top-nav row mx-auto my-auto pt-3 pb-3 w-100 container-fluid text-white">
+        <div class="toggle-btn col-auto text-white text-start p-0 d-md-none" style="cursor: pointer;" id="nav-toggler">
           <span class=" bi bi-list fs-2 text-start ms-0 me-auto"></span>
         </div>
-        <a href="#" class="col-sm col-8 mx-auto mx-sm-0 text-sm-start  text-center my-auto">
-          <img class="d-block" src="./assets/svg/logo_white.svg" alt="fiverr">
-          <img class="d-none" src="./assets/svg/logo.svg" alt="fiverr">
+        <a href="#" class="nav-logo col-sm col-8 mx-auto mx-sm-0 text-sm-start text-center my-auto">
+          <div style="width: fit-content;" class="mx-auto mx-sm-0">
+            <img class="nav-logo-white d-block" src="./assets/svg/logo_white.svg" alt="fiverr">
+            <img class="nav-logo-black d-none" src="./assets/svg/logo.svg" alt="fiverr">
+          </div>
         </a>
-        <ul class="d-none d-md-flex col-auto row fw-semibold my-auto">
+        <ul class="d-none d-md-flex text-white col-auto row fw-semibold my-auto">
           <li class="col-auto">Fiverr Business</li>
           <li class="col-auto">Explore</li>
           <li class="col-auto d-none d-lg-block">
@@ -44,9 +46,9 @@
           <li class="col-auto d-none d-lg-block">₹ INR</li>
           <li class="col-auto">Become a Seller</li>
         </ul>
-        <a href="#" class="d-none d-sm-block col-auto my-auto text-end fs-6 fw-semibold text-white">Sign In</a>
+        <a href="#" class="d-none d-sm-block text-white col-auto my-auto text-end fs-6 fw-semibold">Sign In</a>
         <a href="#"
-          class="join-btn col-auto my-auto text-end fs-6 px-3 py-1 fw-semibold text-white border border-1 border-white rounded-2">Join</a>
+          class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2">Join</a>
       </div>
     </nav>
     <nav class="mobile-nav text-nowrap" id="mobile-nav">

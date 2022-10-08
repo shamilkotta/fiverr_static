@@ -52,3 +52,13 @@ nav ul > li {
   border-color: var(--primary--color) !important;
   background-color: var(--primary--color) !important;
 }
+
+.join-btn-second {
+  color: var(--primary--color);
+  border-color: var(--primary--color) !important;
+}
+
+.join-btn-second:hover {
+  color: white;
+  background-color: var(--primary--color) !important;
+}
