@@ -190,3 +190,9 @@ nav {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+
+/* Fiverr guides */
+.guide-post > img:hover {
+  opacity: 0.9;
+  transition: all 0.1s linear;
+}
