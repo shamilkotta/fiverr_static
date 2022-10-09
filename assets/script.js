@@ -73,3 +73,20 @@ clients.map((ele) => {
 clientParent.appendChild(clientDivNode);
 
 // Explore
+const exploreParent = document.getElementById("explore");
+const exploreDivNode = document.createElement("div");
+exploreDivNode.className = "content-wrapper my-4 mx-auto d-flex flex-wrap justify-content-start";
+exploreDivNode.style.flex = "1 1 0";
+explore.map(ele => {
+  const childNode = document.createElement("a");
+  childNode.href = "#", childNode.className = "my-4 text-black d-flex flex-column align-items-center";
+  childNode.style.width = "200px", childNode.style.gap = "15px"
+  let imgNode = document.createElement("img");
+  imgNode.src = ele.url, imgNode.alt = ele.alt;
+  imgNode.style.width = "48px", imgNode.style.height = "48px"
+  childNode.appendChild(imgNode);
+  let txtNode = document.createTextNode(ele.alt);
+  childNode.appendChild(txtNode);
+  exploreDivNode.appendChild(childNode);
+})
+exploreParent.appendChild(exploreDivNode);

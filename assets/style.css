@@ -155,3 +155,26 @@ nav {
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+
+/* Explore */
+#explore > div > a {
+  position: relative;
+}
+
+#explore > div > a::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 3px;
+  top: 55px;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-bottom: 2px solid rgb(187, 187, 187);
+  transition: width 0.05s linear;
+}
+
+#explore > div > a:hover::after {
+  width: 85px;
+  border-color: var(--primary--color-p);
+}
