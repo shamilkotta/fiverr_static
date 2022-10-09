@@ -31,6 +31,10 @@ nav ul > li {
   cursor: pointer;
 }
 
+nav {
+  z-index: 10 !important;
+}
+
 #mobile-nav > #sidebar {
   width: 250px;
   overflow-x: hidden;
@@ -46,6 +50,7 @@ nav ul > li {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.466);
   backdrop-filter: blur(1px);
+  z-index: 10;
 }
 
 .join-btn:hover {
@@ -122,4 +127,25 @@ nav ul > li {
 
 .hero > div >  div > div > span {
   font-size: .8rem;
+}
+
+/* Our Qualities */
+.qlts-video-thumb {
+  position: relative;
+}
+
+.qlts-video-thumb::after {
+    content: "";
+    display: inline-block;
+    background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png") no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 0;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }

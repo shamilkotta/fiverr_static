@@ -61,7 +61,8 @@ document.addEventListener("scroll", () => {
 // Our cients 
 const parent = document.getElementById("clients-container");
 const divNode = document.createElement("div");
-divNode.className = "clients-container d-flex justify-content-center align-center flex-wrap bg-secondary bg-opacity-10";
+divNode.className = "clients-container d-flex justify-content-between align-center flex-wrap mx-auto py-2";
+divNode.style.width = "50%"
 clients.map((ele) => {
   const childNode = document.createElement("img");
   childNode.src = ele.url;

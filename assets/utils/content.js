@@ -13,6 +13,6 @@ const clients = [
   },
   {
     url: "https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/paypal.ec56157.png",
-    alt: "Paypa"
+    alt: "Paypal"
   },
 ];
