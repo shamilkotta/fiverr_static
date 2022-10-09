@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 /* Navbar */
@@ -19,7 +19,7 @@ ul {
   padding: 0 !important;
 }
 
-a:link{
+a:link {
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ nav {
   background-color: var(--primary--color) !important;
 }
 
- /* Hero section */
+/* Hero section */
 
 .hero {
   background-color: #023a15;
@@ -77,11 +77,11 @@ nav {
   background-position: 70% 100%;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  background-image: url('https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049970/bg-hero-5-1792-x1.png');
+  background-image: url("https://fiverr-res.cloudinary.com/image/upload/q_auto,f_auto/v1/attachments/generic_asset/asset/bb5958e41c91bb37f4afe2a318b71599-1599344049970/bg-hero-5-1792-x1.png");
 }
 
 .hero > div {
- width: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 992px) {
@@ -102,35 +102,38 @@ nav {
 }
 
 .hero input {
-  padding-top: .7rem;
-  padding-bottom: .7rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   font-weight: 500;
   outline: none;
 }
 
-.hero input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: gray;
   opacity: 1; /* Firefox */
 }
 
-.hero input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.hero input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: red;
 }
 
-.hero input::-ms-input-placeholder { /* Microsoft Edge */
+.hero input::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: red;
 }
 
-.hero input[type=button]:hover {
+.hero input[type="button"]:hover {
   background-color: var(--primary--color) !important;
 }
 
-.hero > div >  div > div > span {
-  font-size: .8rem;
+.hero > div > div > div > span {
+  font-size: 0.8rem;
   cursor: pointer;
 }
 
-.hero > div >  div > div > span:hover {
+.hero > div > div > div > span:hover {
   background-color: white;
   color: black;
 }
@@ -141,19 +144,20 @@ nav {
 }
 
 .qlts-video-thumb::after {
-    content: "";
-    display: inline-block;
-    background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png") no-repeat;
-    background-size: 80px;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    z-index: 0;
-    cursor: pointer;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+  content: "";
+  display: inline-block;
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png")
+    no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 0;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* Explore */
@@ -168,8 +172,8 @@ nav {
   height: 3px;
   top: 55px;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-bottom: 2px solid rgb(187, 187, 187);
   transition: width 0.05s linear;
 }
