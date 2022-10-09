@@ -127,6 +127,12 @@ nav {
 
 .hero > div >  div > div > span {
   font-size: .8rem;
+  cursor: pointer;
+}
+
+.hero > div >  div > div > span:hover {
+  background-color: white;
+  color: black;
 }
 
 /* Our Qualities */

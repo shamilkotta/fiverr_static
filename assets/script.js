@@ -58,16 +58,18 @@ document.addEventListener("scroll", () => {
   }
 })
 
-// Our cients 
-const parent = document.getElementById("clients-container");
-const divNode = document.createElement("div");
-divNode.className = "clients-container d-flex justify-content-between align-center flex-wrap mx-auto py-2";
-divNode.style.width = "50%"
+// Our clients 
+const clientParent = document.getElementById("clients-container");
+const clientDivNode = document.createElement("div");
+clientDivNode.className = "clients-container d-flex justify-content-between align-center flex-wrap mx-auto py-2";
+clientDivNode.style.width = "50%"
 clients.map((ele) => {
   const childNode = document.createElement("img");
   childNode.src = ele.url;
   childNode.alt = ele.alt;
   childNode.className = "mx-2";
-  divNode.appendChild(childNode);
+  clientDivNode.appendChild(childNode);
 })
-parent.appendChild(divNode);
+clientParent.appendChild(clientDivNode);
+
+// Explore
