@@ -182,3 +182,11 @@ nav {
   width: 85px;
   border-color: var(--primary--color-p);
 }
+
+/* CTA logo maker */
+.cta-logo-bg {
+  background-image: url('./img/logo-maker.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
