@@ -21,6 +21,7 @@ nOverlay[0].addEventListener("click", (e) => {
 // Change topnav bg color on scroll
 const logoBlack = document.getElementsByClassName("nav-logo-black")[0];
 const logoWhite = document.getElementsByClassName("nav-logo-white")[0];
+const optionsNav = document.getElementById("nav-options");
 const child = [...topNav.children[0].children]
 document.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
@@ -39,6 +40,9 @@ document.addEventListener("scroll", () => {
     logoWhite.classList.add("d-none")
     logoBlack.classList.add("d-block")
     logoBlack.classList.remove("d-none")
+
+    //Adding options bar on scroll 
+    optionsNav.classList.add("d-sm-flex");
   } else {
     // changin bg color
     topNav.classList.remove("bg-white");
@@ -55,6 +59,9 @@ document.addEventListener("scroll", () => {
     logoWhite.classList.add("d-block")
     logoBlack.classList.add("d-none")
     logoBlack.classList.remove("d-block")
+
+    //Removing options bar on scroll 
+    optionsNav.classList.remove("d-sm-flex");
   }
 })
 

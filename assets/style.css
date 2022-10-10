@@ -68,6 +68,51 @@ nav {
   background-color: var(--primary--color) !important;
 }
 
+.nav-options {
+  top: 60px !important;
+}
+
+.nav-options a {
+  color: rgb(161, 161, 161) !important;
+  white-space: nowrap;
+}
+
+.nav-options-content {
+  height: 40px;
+}
+
+.nav-options ul {
+  overflow-x: auto;
+}
+
+.nav-options ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.nav-options ul {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.nav-options li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-options li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 31px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-bottom: 2px solid var(--primary--color-p);
+  transition: width 0.05s linear;
+}
+
 /* Hero section */
 
 .hero {
