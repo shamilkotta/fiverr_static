@@ -196,3 +196,21 @@ nav {
   opacity: 0.9;
   transition: all 0.1s linear;
 }
+
+/* Footer */
+.footer a {
+  color: rgb(155, 155, 155) !important;
+}
+
+.footer .footer-links li {
+  margin: 14px 0;
+}
+
+.footer .footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social li:hover {
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+}
