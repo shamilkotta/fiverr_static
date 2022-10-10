@@ -97,3 +97,42 @@ explore.map(ele => {
   exploreDivNode.appendChild(childNode);
 })
 exploreParent.appendChild(exploreDivNode);
+
+// Popular services
+const servParent = document.getElementById("services-slider-wrapper");
+const servDivNode = document.createElement("div");
+servDivNode.className = "row d-flex flex-nowrap";
+servDivNode.style.gap = "8px"
+services.map(ele => {
+  const childNode = document.createElement("div");
+  const mt = document.createElement("p");
+  mt.innerHTML = ele.moto;
+  const hd = document.createElement("h2");
+  mt.style.margin = 0, mt.style.padding = 0;
+  hd.innerHTML = ele.head
+  childNode.appendChild(mt)
+  childNode.appendChild(hd)
+  childNode.className = "col-12 col-sm-6 col-md-4 col-lg-3 text-white pt-3"
+  childNode.style.backgroundRepeat = "no-repeat";
+  childNode.style.backgroundImage = `url(${ele.url})`;
+  childNode.style.height = "350px";
+  childNode.style.borderRadius = "5px";
+  childNode.style.backgroundSize = "cover";
+  childNode.style.backgroundPosition = "center"
+  servDivNode.appendChild(childNode);
+})
+servParent.appendChild(servDivNode);
+//scroll services
+const servLeft = document.getElementById("slider-left-arrow");
+const servRight = document.getElementById("slider-right-arrow");
+servRight.addEventListener("click", () => {
+  const width = servParent.offsetWidth;
+  const current = servParent.scrollLeft;
+  servParent.scrollTo(current + width, 0)
+})
+
+servLeft.addEventListener("click", () => {
+  const width = servParent.offsetWidth;
+  const current = servParent.scrollLeft;
+  servParent.scrollTo(current - width, 0)
+})

@@ -183,6 +183,45 @@ nav {
   color: black;
 }
 
+/* Fiverr services */
+.popular-services {
+  position: relative;
+}
+
+#services-slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#services-slider-wrapper {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slider-right-arrow {
+  right: 10px;
+  box-shadow: 1px 1px 5px 0px rgb(177, 177, 177);
+}
+
+.slider-left-arrow {
+  left: 10px;
+  box-shadow: -1px 1px 5px 0px rgb(177, 177, 177);
+}
+
+.slider-left-arrow, .slider-right-arrow {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 35px;
+  width: 45px;
+  height: 45px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
 /* Our Qualities */
 .qlts-video-thumb {
   position: relative;
